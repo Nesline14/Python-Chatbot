@@ -1,0 +1,88 @@
+{
+  "python_topics": [
+    {
+      "topic": "Variables",
+      "keywords": ["variable", "variables", "assign", "assignment"],
+      "description": "Variables are used to store data in Python. You don't need to declare a type — Python figures it out automatically based on the value you assign.",
+      "example": "name = 'John'\nage = 25\nprint(name, age)"
+    },
+    {
+      "topic": "Data Types",
+      "keywords": ["data type", "datatype", "types", "int", "float", "string", "bool", "boolean"],
+      "description": "Python has several built-in data types: int (whole numbers), float (decimals), str (text), bool (True/False), and more complex types like list, tuple, dict, and set.",
+      "example": "age = 25          # int\nheight = 5.9      # float\nname = 'Alex'     # str\nis_student = True # bool"
+    },
+    {
+      "topic": "Lists",
+      "keywords": ["list", "lists", "array"],
+      "description": "A list is an ordered, changeable collection of items. Lists can hold mixed data types and are defined with square brackets.",
+      "example": "fruits = ['apple', 'banana', 'cherry']\nfruits.append('orange')\nprint(fruits[0])   # apple"
+    },
+    {
+      "topic": "Tuples",
+      "keywords": ["tuple", "tuples"],
+      "description": "A tuple is like a list, but it is immutable — once created, its values cannot be changed. Tuples are defined with parentheses.",
+      "example": "point = (10, 20)\nprint(point[0])    # 10\n# point[0] = 5    # this would raise an error"
+    },
+    {
+      "topic": "Dictionaries",
+      "keywords": ["dict", "dictionary", "dictionaries", "key value", "key-value"],
+      "description": "A dictionary stores data as key-value pairs. It is unordered (in older Python) or insertion-ordered (Python 3.7+), and keys must be unique.",
+      "example": "student = {'name': 'Sam', 'age': 21}\nprint(student['name'])   # Sam\nstudent['grade'] = 'A'"
+    },
+    {
+      "topic": "Sets",
+      "keywords": ["set", "sets"],
+      "description": "A set is an unordered collection of unique items. Sets automatically remove duplicates and are useful for membership tests and removing repeats.",
+      "example": "numbers = {1, 2, 2, 3}\nprint(numbers)     # {1, 2, 3}\nnumbers.add(4)"
+    },
+    {
+      "topic": "Conditions",
+      "keywords": ["if", "else", "elif", "condition", "conditional"],
+      "description": "Conditional statements let your program make decisions using if, elif, and else based on whether an expression is True or False.",
+      "example": "age = 18\nif age >= 18:\n    print('Adult')\nelif age >= 13:\n    print('Teenager')\nelse:\n    print('Child')"
+    },
+    {
+      "topic": "Loops",
+      "keywords": ["loop", "loops", "for loop", "while loop", "for", "while", "iterate"],
+      "description": "Loops let you repeat code. Use a 'for' loop to iterate over a sequence, and a 'while' loop to repeat while a condition stays True.",
+      "example": "for i in range(3):\n    print(i)\n\ncount = 0\nwhile count < 3:\n    print(count)\n    count += 1"
+    },
+    {
+      "topic": "Functions",
+      "keywords": ["function", "functions", "def", "return"],
+      "description": "Functions are reusable blocks of code defined with 'def'. They can take parameters and return values, helping you avoid repeating code.",
+      "example": "def greet(name):\n    return f'Hello, {name}!'\n\nprint(greet('World'))"
+    },
+    {
+      "topic": "Classes and Objects",
+      "keywords": ["class", "classes", "object", "objects", "oop", "self", "__init__"],
+      "description": "Classes are blueprints for creating objects. They bundle data (attributes) and behavior (methods) together using object-oriented programming (OOP).",
+      "example": "class Dog:\n    def __init__(self, name):\n        self.name = name\n    def bark(self):\n        return f'{self.name} says Woof!'\n\nmy_dog = Dog('Rex')\nprint(my_dog.bark())"
+    },
+    {
+      "topic": "File Handling",
+      "keywords": ["file", "files", "open", "read file", "write file", "file handling"],
+      "description": "Python can read and write files using the built-in open() function. Using 'with' automatically closes the file for you.",
+      "example": "with open('notes.txt', 'w') as f:\n    f.write('Hello, file!')\n\nwith open('notes.txt', 'r') as f:\n    print(f.read())"
+    },
+    {
+      "topic": "Exception Handling",
+      "keywords": ["exception", "error", "try", "except", "finally", "raise"],
+      "description": "Exception handling lets you gracefully deal with errors using try/except blocks, instead of letting your program crash.",
+      "example": "try:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    print('Cannot divide by zero!')\nfinally:\n    print('Done trying.')"
+    },
+    {
+      "topic": "Modules",
+      "keywords": ["module", "modules", "import", "package", "library"],
+      "description": "Modules are files containing Python code (functions, classes, variables) that you can reuse by importing them into other programs.",
+      "example": "import math\nprint(math.sqrt(16))   # 4.0\n\nfrom datetime import date\nprint(date.today())"
+    },
+    {
+      "topic": "Basic Python Programs",
+      "keywords": ["program", "example program", "simple program", "hello world", "practice"],
+      "description": "Simple beginner programs help you practice combining variables, loops, and conditions to solve small problems.",
+      "example": "# Check if a number is even or odd\nnum = 7\nif num % 2 == 0:\n    print('Even')\nelse:\n    print('Odd')"
+    }
+  ]
+}
